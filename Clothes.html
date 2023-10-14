@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website With Payment</title>
+    <!--Link To CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <!--Nav-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="#" class="logo">TechTreasureHub</a>
+            <!--Web Service Buttons-->
+            <nav class="header-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html" id="aboutLink" class="active">About</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="products.html" class="active">Products</a>
+            </nav>
+            <!--Cart icon-->
+            <i class="bx bx-shopping-bag" id="cart-icon" data-quantity="0"></i>
+            
+            <!--cart-->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!--Content-->
+                <div class="cart-content"></div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">Pay Now</button>
+                <!--Close Cart-->
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Products -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <!-- Shop Content -->
+        <div class="shop-content">
+            
+            <!--Hoodies-->
+            <div class="product-box">
+                <!-- Stripe need images that are an online on local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBBxTPXj6wwEoQ64zY3Rg2mNhrhCIGuGcPXJrkH1TiwVCzkBhr1W9BdmGvXpV0Kdbomc74mFq_maQ50yWIKNZ4mbSWtB4W4rtJ8xy7K7L-PrReojFRnZiSohsfVetpkMddU9gZrlTLGyimDN-fozwzvVnluYqToS0fjFEYzFgGTKkGkEYknBnl_1TBXhc/s612/Hoodie%204.webp" alt="" class="product-img">
+                <h2 class="product-title">Men Full Sleeve Printed Hooded Sweatshirt</h2>
+                <span class="price">$74</span>
+                <i class="bx bx-shopping-bag add-cart" ></i>
+            </div>
+            <div class="product-box">
+                <!-- Stripe need images that are an online on local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhm-B8TyFYdsql_Qjab7HlySNbmKFPE2ffv5_TXyGD46edGjnxqbeDgLh8Z7-TTlQY9PKdqVGxXH-Ouo5fGYUMoYykWBpRmPBNgbCUp3qEwQ6gOiIFB1FkAbzRo2qRfC4R4ATmK6t-bQdnBv1ame1vfg2dwDb549-23hTTRgMXYPn7ZC1LUqymdKJtiA8/s612/Hoodie%203.webp" alt="" class="product-img">
+                <h2 class="product-title">Men Full Sleeve Graphic Print Hooded Sweatshirt</h2>
+                <span class="price">$74</span>
+                <i class="bx bx-shopping-bag add-cart" ></i>
+            </div>
+            <div class="product-box">
+                <!-- Stripe need images that are an online on local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfZi4F6pqSNiKq23l5zZyZUhhJTm_frNhOuXscxLOD7nQm2b2R9nyGHJjCV6uiGs6ae41tfH1ghrxdduQI1lyu73XW6RInMY2ub_YWAO5ZLTyg1xT2cn5BwhvrBSXX8dnk_h81WoyrwZqVCxaS1ZfjuHXs1i9Vb1f6Jny79oJf3V2Dw-W0Ai6pmZFQz8Q/s612/Hoodie%202.webp" alt="" class="product-img">
+                <h2 class="product-title">Men Full Sleeve Graphic Print Hooded Sweatshirt</h2>
+                <span class="price">$74</span>
+                <i class="bx bx-shopping-bag add-cart" ></i>
+            </div>
+            <div class="product-box">
+                <!-- Stripe need images that are an online on local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSpwlcPPDt4UDvViKA-c80XOK1PzN1i4D8qznCZokVBtFqRQ_OEKun-odSCIskssSNyBE0myIO-fQxgbcXhcWbAQGCc82_8d-zukQdGC14d5-zBrZpJwTFRgDlqnY5qWw9S5QGLhMVAoazBrsIVI3fsMcHQ3Vb7R8gjZ4Qa65TAWsXEE6pjxg1n3IB1S4/s612/Hoodie%201.webp" alt="" class="product-img">
+                <h2 class="product-title">Men Full Sleeve Printed Hooded Sweatshirt</h2>
+                <span class="price">$74</span>
+                <i class="bx bx-shopping-bag add-cart" ></i>
+            </div>
+
+            <!-- Box 5 -->
+            <div class="product-box">
+                <!-- Stripe need images that are an online on local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWQQx2b6Y0Mk_1iwamhNP7ozHqTvv8bBNtRwiiGqqpVmdgjdU_lvwnKKm5Ik-1CGG-RhwbV3wqyDQtfkKMgCXpT4qAvtqBwBuAlmWYgmqnf5guDndjGW68vR48_ERmGx_Hs3h3nvSYxlqHb3xcmusEQJIOEw3m3qzg5AcUO96_p3SOAMLB9AI8HwJI_eA/s320/product5.jpeg" alt="" class="product-img">
+                <h2 class="product-title">ADICOLOR HOODIE</h2>
+                <span class="price">$74</span>
+                <i class="bx bx-shopping-bag add-cart" ></i>
+            </div>
+            <!--Hoodies-->
+
+            <!--Pants-->
+            <div class="product-box">
+                <!-- Stripe need images that are an online on local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGz92GjUX3v231DfpcjLxRoe8WNRQ9K5ufty-Q22UXmECeuZw7wGorJJSbi7j2IRhZjV4MmkEZFyKt-2FDg4-0p_seC2cDky67hPMYoytCYKHf6yNj4l8bgr3tqBgmudmHN5D1v_iBw7qwkYW7fGapzSe_Zk4SNraD2Um-O6kePbfwx-7iE-xhUxH0Xd8/s612/Pant%202.webp" alt="" class="product-img">
+                <h2 class="product-title">Men Skinny Fit Blue Polycotton Trousers</h2>
+                <span class="price">$74</span>
+                <i class="bx bx-shopping-bag add-cart" ></i>
+            </div>
+
+            <div class="product-box">
+                <!-- Stripe need images that are an online on local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwY7nGWNNMjWWAoSazeepAHnWo1W9je2QwwUoGcwZ9JiFT56t2aaWgGsFITgL9B2uu6pBBMmd4DpM-cTyya-XAYQ8rym3bDJmcQ5RGgySYwBlbQJwsDNxgH-KeAeMiRbQ-CzDqJKsn52WdMcB7_20qMts12ejYxPHe-iT-34f0xewHRUTGxB04Yfz9uTI/s612/Pant%203.webp" alt="" class="product-img">
+                <h2 class="product-title">Men Regular Fit Grey Lycra Blend Trousers</h2>
+                <span class="price">$74</span>
+                <i class="bx bx-shopping-bag add-cart" ></i>
+            </div>
+
+            <div class="product-box">
+                <!-- Stripe need images that are an online on local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRvGvkxn9zYVH5Wh7JO3mzekhBd8dTP9VPYJy3qHjMehmDWi0WsE1XUDUA8KiWCXIRHED-IEDc8nHJ3A2nuOI9jxmFqyQrUoiL2_7BbOFB0vSO2PsKnDpnGnoQ8S7qMSOHs_aMmeBhs53sNpfnO8qN5b_Txn0ZYJBKaCPCJgAY58FOI6XNRvyVphf0Of4/s612/Pant%205.webp" alt="" class="product-img">
+                <h2 class="product-title">Men Skinny Fit Beige Cotton Blend Trousers</h2>
+                <span class="price">$74</span>
+                <i class="bx bx-shopping-bag add-cart" ></i>
+            </div>
+
+            <div class="product-box">
+                <!-- Stripe need images that are an online on local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8gQQNCd4EjEnTQbeLCK84RIrkVgfe8V4ZMDNBAUlw8I2Ff8lJNdKwRWheuQwTglbTAZ1i3nrRPsnf_WsNIAG-27kJdhep_wE7zWSY2vWIZsW6yOdwGZaM6fiIKLVjkD78Di0z-CuyVw0Qsa9E8Nt3fqtr-GjoXLEhUtxNYyJKzQvs6d2kteXHuYEhxp4/s612/Pant-1.webp" alt="" class="product-img">
+                <h2 class="product-title">Men Regular Fit Black Lycra Blend Trousers</h2>
+                <span class="price">$74</span>
+                <i class="bx bx-shopping-bag add-cart" ></i>
+            </div>
+
+            <div class="product-box">
+                <!-- Stripe need images that are an online on local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5rodoi95RbswMW8kWDZY3bSIE3GmFM4RnXFQUuMLushF4hCX6oLW9jssEBxd92fivLguISCIN06g_LN48lQjgEC4srcJ9Mw6GH6ZPFBjVYq8lLkJMkOuTBOQFK8F-mz2XwRdAoMrifoNsTh8AItrn0ylVv0rPaVdoqd-c3NJLKvh-U5SMH7-OisSaeMs/s612/Pant-4.webp" alt="" class="product-img">
+                <h2 class="product-title">Pack of 2 Men Regular Fit Blue, Grey Lycra Blend Trousers</h2>
+                <span class="price">$74</span>
+                <i class="bx bx-shopping-bag add-cart" ></i>
+            </div>
+            <!--Pants-->
+
+            <!--Shirts-->
+            <div class="product-box">
+                <!-- Stripe need images that are an online on local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwcrf3R2t-wNQs1-6wVKCoDoOxPqyxqgES2o0zsxUllmEViQiqDSCdYfOP7uVWMcy3_n4VcABKKzoQCLd8zjgp1k0jgWIOhZoSaJ-E4LEmObFxTTdmHJxE9Hs0goucIIszIxxSV8rHBKtciFxTmhra1s3dMQbrAcAg9lUhQEKLZIlKnCylSAdf2Ik7y5I/s612/Shirt%201.webp" alt="" class="product-img">
+                <h2 class="product-title">Men Regular Fit Solid Spread Collar Casual Shirt</h2>
+                <span class="price">$74</span>
+                <i class="bx bx-shopping-bag add-cart" ></i>
+            </div>
+
+            <div class="product-box">
+                <!-- Stripe need images that are an online on local server it will not show in stripe checkout page we have to upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcXSMM6xtbYDXQuqjizIoqzgw7mPYYjKIDMwn-gIZFDFaBeDyl0hPeVlRYCi2OEQccxCnVmQnLfMnkhdkPlgTNBr0H1jlkg631zYdEKit-Ew2xrbQkKY22ER64U4DQ_Q1Q3EHcKb7ybWWtiPPd-a9QrFn-e2NAHvsr5SdSKNTXRtFpyN3WsHzTMEXZqgs/s612/shirt%202.webp" alt="" class="product-img">
+                <h2 class="product-title">Men Regular Fit Solid Spread Collar Casual Shirt</h2>
+                <span class="price">$74</span>
+                <i class="bx bx-shopping-bag add-cart" ></i>
+            </div>
+            <!--Shirts-->
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Smartphones</a></li>
+                    <li><a href="#">Tablets</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 TechTreasureHub. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Link TO JS-->
+    <script>
+        // JavaScript to redirect to the about.html page
+        document.getElementById("aboutLink").addEventListener("click", function() {
+            window.location.href = "about.html";
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
